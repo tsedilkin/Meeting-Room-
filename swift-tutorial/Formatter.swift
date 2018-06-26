@@ -25,8 +25,8 @@ class Formatter {
         }
         
         let toStringFormatter = DateFormatter()
-        toStringFormatter.dateStyle = DateFormatter.Style.long
-        toStringFormatter.timeStyle = DateFormatter.Style.long
+        toStringFormatter.dateStyle = DateFormatter.Style.short
+        toStringFormatter.timeStyle = DateFormatter.Style.short
         toStringFormatter.timeZone = TimeZone.current
 
         return toStringFormatter.string(from: dateObj!)

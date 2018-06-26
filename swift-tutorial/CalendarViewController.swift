@@ -37,7 +37,8 @@ class CalendarViewController: UIViewController {
     @IBAction func Refresher(_ sender: Any) {
         if (service.isLoggedIn) {
             loadUserData()
-            print("Время начала работы приложения:",timevalue1)
+            print("Время обновления:")
+            ttime()
             self.tableView.reloadData()
         }
     }

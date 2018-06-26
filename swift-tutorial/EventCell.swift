@@ -16,7 +16,6 @@ struct Event {
     let start: String
     let end: String
 }
-
 let date = Date()
 let calendar = Calendar.autoupdatingCurrent
 var hour = calendar.component(.hour, from: date)
@@ -29,7 +28,29 @@ var asd2 = ""
 var datevalue = ""
 var endvalue = ""
 var timevalue1 = ""
-var theend = ""
+var startvalue1 = ""
+
+func ttime() -> String {
+    let date = Date()
+    let calendar = Calendar.autoupdatingCurrent
+    var hour = calendar.component(.hour, from: date)
+    var minutes = calendar.component(.minute, from: date)
+    var days = calendar.component(.day, from: date)
+    var months = calendar.component(.month, from: date)
+    var years = calendar.component(.year, from: date)
+    var asd22 = ""
+    var ttext = ""
+    if minutes <= 9{
+        asd22 = ("0\(minutes)")
+        ttext = ("\(hour):\(asd22)")
+    } else { ttext = ("\(hour):\(minutes)")}
+    print(ttext)
+    return ttext
+    
+}
+
+
+
 class EventCell: UITableViewCell {
     @IBOutlet weak var subjectLabel: UILabel!
     @IBOutlet weak var startLabel: UILabel!
@@ -54,8 +75,6 @@ class EventCell: UITableViewCell {
     }
 }
 
-
-
 class EventsDataSource: NSObject {
     let events: [Event]
     
@@ -78,13 +97,19 @@ class EventsDataSource: NSObject {
                     asd2 = ("0\(minutes)")
                     timevalue1 = ("\(hour):\(asd2)")
                 }
+                //print(newEvent.end.suffix(5))
                 if datevalue.prefix(10) == newEvent.start.prefix(10) {
-                    
+                    if ttime() < newEvent.end.suffix(5) {
                         evtArray.append(newEvent)
-                        endvalue = newEvent.end
-                    
+                        print(ttime)
+                       
+                        if ttime() > newEvent.end.suffix(5) {
+                            if evtArray.count != 0 {
+                            evtArray.dropLast()
+                        }
+                        }
+                    }
                 }
-                
             }
         }
         self.events = evtArray

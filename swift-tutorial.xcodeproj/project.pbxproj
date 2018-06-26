@@ -41,7 +41,7 @@
 		972955382A61C90F6894247D /* Pods-swift-tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-tutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-tutorial/Pods-swift-tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		A8E46864CA4A96FE29A93A39 /* Pods_swift_tutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_tutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A478C02D002F14CFF40886 /* Pods-swift-tutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-tutorialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-tutorialTests/Pods-swift-tutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EB8677F71E9294EF0050EF61 /* swift-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8677F71E9294EF0050EF61 /* MeetingRoomTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingRoomTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8677FA1E9294EF0050EF61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB8677FC1E9294EF0050EF61 /* MailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 		EB8677FE1E9294EF0050EF61 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 		EB8677F81E9294EF0050EF61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB8677F71E9294EF0050EF61 /* swift-tutorial.app */,
+				EB8677F71E9294EF0050EF61 /* MeetingRoomTest.app */,
 				EB86780D1E9294EF0050EF61 /* swift-tutorialTests.xctest */,
 			);
 			name = Products;
@@ -168,7 +168,7 @@
 			);
 			name = "swift-tutorial";
 			productName = "swift-tutorial";
-			productReference = EB8677F71E9294EF0050EF61 /* swift-tutorial.app */;
+			productReference = EB8677F71E9294EF0050EF61 /* MeetingRoomTest.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EB86780C1E9294EF0050EF61 /* swift-tutorialTests */ = {
@@ -489,9 +489,10 @@
 				INFOPLIST_FILE = "swift-tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MeetingRoomTest.Tsedilkin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MeetingRoomTest;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -504,9 +505,10 @@
 				INFOPLIST_FILE = "swift-tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MeetingRoomTest.Tsedilkin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = MeetingRoom;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
